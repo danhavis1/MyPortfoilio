@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Rootlayout from "../layout/Rootlayout";
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
-import About from "../pages/About";
+
 
 export default function Approute() {
   const routes = [
@@ -22,10 +22,6 @@ export default function Approute() {
         {
           path: "/contact",
           element: <Contact />,
-        },
-        {
-          path: "/about",
-          element: <About />,
         },
       ],
     },
