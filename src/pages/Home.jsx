@@ -1,19 +1,26 @@
 import { Folder, MoveRight, Swords, User } from "lucide-react";
 import { Link } from "react-router";
-import Pic from "../assets/WhatsApp Image 2025-08-27 at 4.23.35 AM.jpeg"
+import Pic from "../assets/WhatsApp Image 2025-08-27 at 4.23.35 AM.jpeg";
+import Board from "../assets/WhatsApp Image 2025-09-08 at 4.48.29 AM.jpeg";
+import New from "../assets/41a8da18-f189-4c66-92a6-6789c58e9814.jpg"
 
 export default function Home() {
   return (
     <div className="max-w-[1200px]  mx-auto  p-2 ">
-    
-      <div className="flex flex-col justify-center items-center p-2 gap-6">
+      <section
+        className="flex flex-col justify-center items-center p-2 gap-6  bg-[url('https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D')]  bg-cover 
+            bg-left-center
+            bg-no-repeat 
+            h-screen 
+            w-full "
+      >
         <img
           src={Pic}
           alt="pic"
           className="rounded-[50%] h-[150px] w-[150px]"
         />
-        <h1 className="text-6xl text-white font-bold">Hi, Im Havis</h1>
-        <p className="text-white font-bold text-md text-center">
+        <h1 className="text-6xl  text-green-400 font-bold">Hi, Im Havis</h1>
+        <p className=" text-green-400 font-bold text-md text-center">
           A Frontend developer based in Lagos , Creating a good and substainable
           <br />
           website for seemless digital experiences. Explore my work and let’s
@@ -22,9 +29,9 @@ export default function Home() {
         <button className="btn btn-border border-green-400 text-green-400 hover:bg-green-700 hover:text-black bg-transparent font-bold rounded-md w-[200px] ">
           Projects{" "}
         </button>
-      </div>
+      </section>
 
-      <div className=" flex flex-col items-center  justify-center h-[400px] mt-30 gap-4 bg-slate-700 rounded p-3">
+      <section className=" flex flex-col items-center  justify-center h-[500px]  gap-4 bg-slate-700 rounded p-3">
         <User size={40} className="bg-green-400 rounded-full" />
         <h1 className="text-3xl text-white font-bold">About Me</h1>
         <p className="font-bold text-white">
@@ -40,8 +47,8 @@ export default function Home() {
           I tried the path of minialism, Finding beauty in simplicity and order.
           When I'm not crafting beautiful web
           <br /> experiences, you can find me swimming or just getting into the
-          rhythm of good music , losing myself <br />
-          in the captivating flow of melodies. You can reach me at{" "}
+          rhythm of good music , losing myself <br />  in the captivating flow
+          of melodies. You can reach me at{" "}
           <Link to="/contact">
             <span className="text-green-400">CONTACT ME</span>
           </Link>
@@ -51,9 +58,9 @@ export default function Home() {
           about delivering impactful digital
           <br /> solutions and continuously improving my skills.
         </p>
-      </div>
+      </section>
 
-      <div className="flex flex-col items-center justify-center gap-4 p-2 mt-18 ">
+      <section className="flex flex-col items-center justify-center gap-4 p-2 mt-18 ">
         <Swords size={40} className="text-green-400" />
         <h1 className="font-bold text-white text-3xl">Technologies</h1>
         <p className="font-bold text-slate-300">
@@ -89,6 +96,7 @@ export default function Home() {
               <p>Express</p>
               <p>MongoDb</p>
               <p>REST API </p>
+              <p>JWT</p>
             </div>
           </div>
 
@@ -107,14 +115,64 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="flex flex-col justify-center items-center gap-4 mt-25">
-      <Folder size={40} className="text-yellow-400"/>
-      <h1 className="font-bold text-4xl text-white">Projects</h1>
-      <p className="text-slate-400">Here are some of the projects I've worked on.</p>
-      
-      </div>
+      <section className="flex flex-col justify-center items-center gap-4 mt-25">
+        <Folder size={40} className="text-yellow-400" />
+        <h1 className="font-bold text-4xl text-white">Projects</h1>
+        <p className="text-slate-400">
+          Here are some of the projects I've worked on.
+        </p>
+        <div className="flex items-center justify-between gap-6 mt-10">
+          <div className="border border-slate-400 rounded-md  h-[600px] w-[350px] p-3 gap-4 text-white flex flex-col ">
+            <img src={Board} alt="pic" className="w-full h-[150px]" />
+            <h2 className="font-bold text-2xl">Cliniccare</h2>
+            <hr className="text-slate-400" />
+            <p className="text-slate-400 ">
+              Comprehensive tools designed to enhance efficiency, improve
+              patient care, and streamline hospital operations.
+            </p>
+
+            <h3 className="font-bold text-md  ">Technologies</h3>
+            <div className="flex items-center justify-between flex-wrap font-bold text-slate-400 gap-3">
+              <p>React</p>
+              <p>Tailwind Css</p>
+              <p>Daisy UI</p>
+              <p>Javascript</p>
+              <p>Express</p>
+            </div>
+
+           <a href="https://clinicare-mgmt-app.vercel.app/">
+            <button className="mt-20 border rounded w-[100px] items-center font-bold text-md p-2 hover:">
+              Demo
+            </button>
+            </a>
+          </div>
+
+          <div className="border border-slate-400 rounded-md  h-[600px] w-[350px] p-3 gap-4 text-white flex flex-col ">
+            <img src={New} alt="pic" className="w-full h-[150px]" />
+            <h2 className="font-bold text-2xl">TvMaze</h2>
+            <hr className="text-slate-400" />
+            <p className="text-slate-400 ">
+              TvMaze is an application that helps user serarch for the latest
+              movies and Tv shows
+            </p>
+
+            <h3 className="font-bold text-md  ">Technologies</h3>
+            <div className="flex items-center justify-between flex-wrap font-bold text-slate-400 gap-3">
+              <p>React</p>
+              <p>Bootstrap</p>
+              <p>Javascript</p>
+            </div>
+    
+           <a href="t-vreact.vercel.app">
+            <button className="mt-20 border rounded w-[100px] items-center font-bold text-md p-2 cursor-pointer ">
+              Demo
+            </button>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

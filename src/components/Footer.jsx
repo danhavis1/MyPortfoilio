@@ -10,7 +10,7 @@ export default function Footer() {
      <p className="text-slate-400"> I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
      
     
-    <div class="flex space-x-4 text-white">
+    <div className="flex space-x-4 text-white">
   <div className="border border-slate-300 bg-blue-600 rounded-full p-4">
   <a href="https://github.com/danhavis1" target="_blank" >
    <Github  />
@@ -33,7 +33,7 @@ export default function Footer() {
 
 <div className="w-full text-center mt-20">
 <hr className="w-full text-slate-500"/>
-<p className="text-white">HAVISWEBDEV © 2025 All rights reserved.</p>
+<p className="text-white text-sm">HAVISWEBDEV © 2025 All rights reserved.</p>
 </div>
 
 
