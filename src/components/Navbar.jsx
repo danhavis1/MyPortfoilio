@@ -8,10 +8,7 @@ export default function Navbar() {
         <Sun size={80} color="white" />
       </Link>
       <div className="flex justify-between gap-5 text-white font-md  text-md">
-        <Link to="/about">
-          <p>About</p>
-        </Link>
-
+      
         <Link to="/contact">
           <p>Contact</p>
         </Link>
