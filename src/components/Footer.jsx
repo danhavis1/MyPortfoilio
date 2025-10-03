@@ -33,7 +33,7 @@ export default function Footer() {
 
 <div className="w-full text-center mt-20">
 <hr className="w-full text-slate-500"/>
-<p className="text-white text-sm">HAVISWEBDEV © 2025 All rights reserved.</p>
+<p className="text-white text-sm mt-5">HAVISWEBDEV © 2025 All rights reserved.</p>
 </div>
 
 
