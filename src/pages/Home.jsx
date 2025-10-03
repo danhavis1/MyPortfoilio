@@ -149,7 +149,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="border border-slate-400 rounded-md  h-[600px] w-[350px] p-3 gap-4 text-white flex flex-col ">
+          <div className="border border-slate-400 rounded-md   h-[600px] w-[350px] p-3 gap-4 text-white flex flex-col ">
             <img src={New} alt="pic" className="w-full h-[150px]" />
             <h2 className="font-bold text-2xl">TvMaze</h2>
             <hr className="text-slate-400" />
@@ -165,7 +165,7 @@ export default function Home() {
               <p>Javascript</p>
             </div>
     
-           <a href="t-vreact.vercel.app">
+           <a href="https://t-vreact.vercel.app">
             <button className="mt-20 border rounded w-[100px] items-center font-bold text-md p-2 cursor-pointer ">
               Demo
             </button>
