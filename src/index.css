@@ -7,5 +7,8 @@
 
 
 body {
-  background-color:#1e293b;
+  /* background-color:#1e293b; */
+  background: linear-gradient(white, azure);
+  color:aliceblue antiquewhite azure ;
+ 
 }
